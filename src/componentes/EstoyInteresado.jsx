@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Swal from "sweetalert2";
 
 const EstoyInteresado = ({ isOpen, onClose }) => {
   const initialFormState = {
@@ -20,11 +21,11 @@ const EstoyInteresado = ({ isOpen, onClose }) => {
     e.preventDefault();
 
     const formData = new FormData();
-    formData.append("entry.456744183", formDataState.nombre); // Nombre
-    formData.append("entry.909394965", formDataState.celular); // Celular
-    formData.append("entry.760312748", formDataState.direccion); // Dirección
-    formData.append("entry.1474851024", formDataState.barrio); // Barrio
-    formData.append("entry.1099306065", formDataState.ciudad); // Ciudad
+    formData.append("entry.456744183", formDataState.nombre);
+    formData.append("entry.909394965", formDataState.celular); 
+    formData.append("entry.760312748", formDataState.direccion); 
+    formData.append("entry.1474851024", formDataState.barrio);
+    formData.append("entry.1099306065", formDataState.ciudad);
 
     fetch(
       "https://docs.google.com/forms/d/e/1FAIpQLSeK3HKZN89mWLEpTGaY2PnZG2ef9ew9QcNDHV05XhEc6YyfiA/formResponse",
@@ -35,7 +36,12 @@ const EstoyInteresado = ({ isOpen, onClose }) => {
       }
     )
       .then(() => {
-        alert("Formulario enviado correctamente");
+        Swal.fire({
+          title: "Pronto nos pondremos en contacto contigo",
+          icon: "success",
+          width: "250px",
+          draggable: true,
+        });
         setFormData(initialFormState); // Limpiar formulario
         onClose(); // Cerrar modal (si aplica)
       })
@@ -50,7 +56,7 @@ const EstoyInteresado = ({ isOpen, onClose }) => {
     <div className="modal-background">
       <div className="modal-content">
         <h3>¡Te llamamos!</h3>
-        <p>Dejanos tus datos y nos pondremos en contacto contigo.</p>
+        <p className="modal-contentP">Déjanos tus datos y nos pondremos en contacto contigo.</p>
         <p className="close-btn" onClick={onClose}>
           x
         </p>
