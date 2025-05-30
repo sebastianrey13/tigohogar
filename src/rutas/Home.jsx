@@ -3,16 +3,16 @@ import "../estilos/home.css";
 
 import imgFullTigoTrio from "../../public/imagenes/fulltigotrio.png";
 import imgFullTigoDuo from "../../public/imagenes/fulltigoduo.png";
+import EstoyInteresado from "../componentes/EstoyInteresado";
 
 const Home = () => {
   const images = [imgFullTigoTrio, imgFullTigoDuo];
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [isPopupOpen, setIsPopupOpen] = useState(false);
 
   // Función para avanzar a la siguiente imagen
   const nextSlide = () => {
-    setCurrentIndex(
-      (prevIndex) => (prevIndex + 1) % images.length
-    );
+    setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
   };
 
   // Función para volver a la imagen anterior
@@ -28,9 +28,13 @@ const Home = () => {
     return () => clearInterval(interval); // Limpia el intervalo al desmontar
   }, []);
 
+  /* Pop up */
+
+  const handleOpenPopup = () => setIsPopupOpen(true);
+  const handleClosePopup = () => setIsPopupOpen(false);
+
   return (
     <div>
-      {/* carrusel */}
       <div className="carrusel">
         <button
           className="carrusel-boton carrusel-boton-izquierda"
@@ -50,10 +54,13 @@ const Home = () => {
           ›
         </button>
       </div>
-      {/* llamame */}
+
       <div className="teLlamamos">
         <p className="teLlamamosTitulo">!Te llamamos!</p>
-        <p className="boton teLlamamosBoton">Estoy interesado</p>
+        <p onClick={handleOpenPopup} className="boton teLlamamosBoton">
+          Estoy interesado
+        </p>
+        <EstoyInteresado isOpen={isPopupOpen} onClose={handleClosePopup} />
       </div>
     </div>
   );
