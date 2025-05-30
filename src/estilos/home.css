@@ -163,7 +163,6 @@
 .modal-content form button {
   width: 100%;
   padding: 10px;
-  margin-top: 15px;
   background-color: #ffb600;
   color: #050637;
   font-weight: bold;
@@ -174,5 +173,22 @@
 }
 
 .modal-content form button:hover {
-  background-color: #45a049;
+  background-color: #ffde8b;
+}
+
+.terminosCondiciones{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.terminosCondicionesTexto{
+  margin-top: 7px;
+}
+
+.terminosCondicionesLink{
+  color: #00377d;
 }

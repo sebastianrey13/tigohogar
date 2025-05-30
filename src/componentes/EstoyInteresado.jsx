@@ -11,6 +11,11 @@ const EstoyInteresado = ({ isOpen, onClose }) => {
   };
 
   const [formDataState, setFormData] = useState(initialFormState);
+  const [aceptaTerminos, setAceptaTerminos] = useState(false);
+
+  const handleCheckboxChange = (event) => {
+    setAceptaTerminos(event.target.checked);
+  };
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -22,8 +27,8 @@ const EstoyInteresado = ({ isOpen, onClose }) => {
 
     const formData = new FormData();
     formData.append("entry.456744183", formDataState.nombre);
-    formData.append("entry.909394965", formDataState.celular); 
-    formData.append("entry.760312748", formDataState.direccion); 
+    formData.append("entry.909394965", formDataState.celular);
+    formData.append("entry.760312748", formDataState.direccion);
     formData.append("entry.1474851024", formDataState.barrio);
     formData.append("entry.1099306065", formDataState.ciudad);
 
@@ -56,7 +61,9 @@ const EstoyInteresado = ({ isOpen, onClose }) => {
     <div className="modal-background">
       <div className="modal-content">
         <h3>¡Te llamamos!</h3>
-        <p className="modal-contentP">Déjanos tus datos y nos pondremos en contacto contigo.</p>
+        <p className="modal-contentP">
+          Déjanos tus datos y nos pondremos en contacto contigo.
+        </p>
         <p className="close-btn" onClick={onClose}>
           x
         </p>
@@ -112,6 +119,22 @@ const EstoyInteresado = ({ isOpen, onClose }) => {
               required
             />
           </div>
+          <label className="terminosCondiciones">
+            <div>
+              <input type="checkbox" required />
+            </div>
+            <div className="terminosCondicionesTexto">
+              Acepto los{" "}
+              <a
+                href="https://transacciones.tigo.com.co/recargas/terminos-y-condiciones"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="terminosCondicionesLink"
+              >
+                términos y condiciones
+              </a>
+            </div>
+          </label>
           <br />
           <button type="submit">Enviar</button>
         </form>
