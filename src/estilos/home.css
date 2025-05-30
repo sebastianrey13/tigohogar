@@ -1,0 +1,59 @@
+.carrusel {
+  position: relative;
+  width: 100%;
+  margin: auto;
+  overflow: hidden;
+}
+
+.carrusel-imagen {
+  width: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.carrusel-boton {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 24px;
+  z-index: 1;
+  border-radius: 50%;
+}
+
+.carrusel-boton:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.carrusel-boton-izquierda {
+  left: 10px;
+}
+
+.carrusel-boton-derecha {
+  right: 10px;
+}
+
+/* Te llamamos */
+
+.teLlamamos{
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.teLlamamosTitulo{
+  color: #00377d;
+  font-size: 40px;
+}
+
+.teLlamamosBoton {
+  padding: 15px;
+}
