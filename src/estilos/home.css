@@ -188,6 +188,15 @@
   border-radius: 6px;
 }
 
+.modal-content form select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+
 .modal-content form button {
   width: 100%;
   padding: 10px;
@@ -228,6 +237,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
+  align-items: start;
   gap: 50px;
+  padding-bottom: 30px;
 }

@@ -3,6 +3,10 @@
   overflow: hidden;
   border-radius: 10px;
   min-width: 296px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .nombrePlan {
@@ -12,12 +16,21 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 95px;
+  height: 105px;
+  gap: 5px;
+  width: 100%;
 }
 
 .nombrePlan h2 {
   text-align: center;
-  font-size: 16px;
+  font-size: 20px;
+  font-weight: 300;
+  width: 250px;
+}
+
+.nombrePlan p {
+  text-align: center;
+  font-size: 12px;
   font-weight: 300;
   width: 250px;
 }
@@ -28,6 +41,7 @@
 }
 
 .descuento {
+  width: 100%;
   background-color: #ffb600;
   color: #ffffff;
   text-align: center;
@@ -101,17 +115,82 @@
   padding: 9px;
 }
 
-.comprarWhatsApp{
-    color: #5bc500;
-    font-weight: bold;
-    text-decoration: underline;
-    text-underline-offset: 2px;
-    padding: 9px;
+.comprarWhatsApp {
+  color: #5bc500;
+  font-weight: bold;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  padding: 9px;
 }
 
+.detallesPlan {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 264px;
+  padding-bottom: 10px;
+}
 
-.detallesPlan-ver{
-    color: #019df4;
-    padding: 12px 8px;
-    text-align: center;
+.detallesPlan-ver {
+  color: #019df4;
+  padding: 12px 8px;
+  text-align: center;
+}
+
+.detallesPlan-contenido {
+  width: 95%;
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease, opacity 0.5s ease;
+}
+
+.detallesPlan-contenido.abierto {
+  max-height: 1000px; 
+  opacity: 1;
+}
+
+.detallesPlan-contenido.cerrado {
+  max-height: 0;
+  opacity: 0;
+}
+
+.detallesPlan-producto {
+  /* display: flex;
+  flex-direction: column;
+  gap: 5px; */
+}
+
+.icono-detalles {
+  height: 30px;
+}
+
+.detalle-nombre {
+  display: flex;
+  align-items: center;
+  padding-top: 15px;
+  padding-bottom: 10px;
+  
+}
+
+.detalle-nombre p {
+  padding-left: 20px;
+}
+
+.check-list {
+  list-style: none; /* Quita los puntos */
+  padding-left: 0;
+  padding-bottom: 15px;
+}
+
+.check-list li::before {
+  content: "\2714"; /* O usa "\2714" o "\2713" (unicode) */
+  color: rgb(35, 150, 35);
+  margin-right: 8px; /* Espacio entre check y texto */
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid #00377b; /* Solo el borde superior */
 }

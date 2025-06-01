@@ -15,7 +15,7 @@ const Header = () => {
           <img className="logoTigo" src={logoBlanco} alt="logo-blanco" />
         </Link>
         <a href="tel:+573152236666" className="llamarHeader boton">
-          <img src={telefonoBlanco} alt="" />
+          <img src={telefonoBlanco} alt="logotelefono" />
           <div>
             <p className="llamarHeaderNumero">3152236666</p>
             <p className="llamarHeaderInfo">Línea exclusiva de ventas</p>
@@ -28,7 +28,7 @@ const Header = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <img className="logoWpHeader" src={logowp} alt="" srcset="" />
+          <img className="logoWpHeader" src={logowp} alt="logoWpHeader"/>
         </a>
       </div>
     </div>

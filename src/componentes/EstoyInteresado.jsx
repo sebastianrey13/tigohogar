@@ -1,21 +1,23 @@
 import React, { useState } from "react";
 import Swal from "sweetalert2";
 
-const EstoyInteresado = ({ isOpen, onClose }) => {
+const EstoyInteresado = ({ isOpen, onClose, plan }) => {
   const initialFormState = {
     nombre: "",
     celular: "",
     direccion: "",
     barrio: "",
     ciudad: "",
+    plan: plan || "",
   };
 
   const [formDataState, setFormData] = useState(initialFormState);
-  const [aceptaTerminos, setAceptaTerminos] = useState(false);
 
-  const handleCheckboxChange = (event) => {
-    setAceptaTerminos(event.target.checked);
-  };
+  React.useEffect(() => {
+    if (isOpen) {
+      setFormData((prev) => ({ ...prev, plan: plan || "" }));
+    }
+  }, [isOpen, plan]);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -31,6 +33,7 @@ const EstoyInteresado = ({ isOpen, onClose }) => {
     formData.append("entry.760312748", formDataState.direccion);
     formData.append("entry.1474851024", formDataState.barrio);
     formData.append("entry.1099306065", formDataState.ciudad);
+    formData.append("entry.1776771898", formDataState.plan);
 
     fetch(
       "https://docs.google.com/forms/d/e/1FAIpQLSeK3HKZN89mWLEpTGaY2PnZG2ef9ew9QcNDHV05XhEc6YyfiA/formResponse",
@@ -64,7 +67,13 @@ const EstoyInteresado = ({ isOpen, onClose }) => {
         <p className="modal-contentP">
           Déjanos tus datos y nos pondremos en contacto contigo.
         </p>
-        <p className="close-btn" onClick={onClose}>
+        <p
+          className="close-btn"
+          onClick={() => {
+            setFormData(initialFormState);
+            onClose();
+          }}
+        >
           x
         </p>
 
@@ -110,14 +119,34 @@ const EstoyInteresado = ({ isOpen, onClose }) => {
             />
           </div>
           <div>
-            <input
-              type="text"
+            <select
+              id="ciudad"
               name="ciudad"
-              placeholder="Ciudad"
               value={formDataState.ciudad}
               onChange={handleChange}
               required
-            />
+            >
+              <option value="">Seleccione una opción</option>
+              <option value="Bucaramanga">Bucaramanga</option>
+              <option value="Floridablanca">Floridablanca</option>
+              <option value="Piedecuesta">Piedecuesta</option>
+              <option value="Girón">Girón</option>
+            </select>
+          </div>
+          <div>
+            <select
+              id="plan"
+              name="plan"
+              value={formDataState.plan}
+              onChange={handleChange}
+              required
+            >
+              <option value="">Seleccione un plan</option>
+              <option value="Full Tigo Trio">Full Tigo Trio</option>
+              <option value="Full Tigo Duo">Full Tigo Duo</option>
+              <option value="Duo Play">Internet + TV</option>
+              <option value="Individual">Internet</option>
+            </select>
           </div>
           <label className="terminosCondiciones">
             <div>
