@@ -111,6 +111,10 @@ a {
   gap: 20px;
 }
 
+.footer-contenedor p{
+  text-align: center;
+}
+
 .footer-copyright {
   text-align: center;
   margin-top: 20px;

@@ -216,6 +216,7 @@
 .terminosCondiciones {
   display: flex;
   justify-content: space-evenlynp;
+  justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   gap: 10px;
@@ -224,10 +225,12 @@
 
 .terminosCondicionesTexto {
   margin-top: 7px;
+  width: 230px !important;
 }
 
 .terminosCondicionesLink {
   color: #00377d;
+  font-weight: bold;
 }
 
 
