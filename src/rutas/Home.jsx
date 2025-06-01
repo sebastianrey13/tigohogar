@@ -61,7 +61,7 @@ const Home = () => {
       precioTotal: 139900,
       precioDescuento: 69950,
       mesesDescuento: "1 Mes",
-      mensaje: 'Hola,%20me%20interesa%20adquirir%20el%20plan%20Full%20Tigo%20Trio%20y%20obtener%20mi%20descuento',
+      mensaje: 'Hola,%20me%20interesa%20adquirir%20el%20plan%20*Full*%20*Tigo*%20*Trio*%20y%20obtener%20mi%20descuento',
       detalles: [
         {
           nombre1: "Móvil",
@@ -103,7 +103,7 @@ const Home = () => {
       precioTotal: 109900,
       precioDescuento: 54950,
       mesesDescuento: "1 Mes",
-      mensaje: 'Hola,%20me%20interesa%20adquirir%20el%20plan%20Full%20Tigo%20Duo%20y%20obtener%20mi%20descuento',
+      mensaje: 'Hola,%20me%20interesa%20adquirir%20el%20plan%20*Full*%20*Tigo*%20*Duo*%20y%20obtener%20mi%20descuento',
       detalles: [
         {
           nombre1: "Móvil",
@@ -138,7 +138,7 @@ const Home = () => {
       precioTotal: 87675,
       precioDescuento: 58450,
       mesesDescuento: "2 Meses",
-      mensaje: 'Hola,%20me%20interesa%20adquirir%20el%20plan%20de%20*INTERNET*%20+%20*TV*%20Duo%20y%20obtener%20mi%20descuento',
+      mensaje: 'Hola,%20me%20interesa%20adquirir%20el%20plan%20de%20*INTERNET*%20*+*%20*TV*%20Duo%20y%20obtener%20mi%20descuento',
       detalles: [
         {
           nombre1: "Internet",
