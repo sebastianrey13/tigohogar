@@ -1,0 +1,117 @@
+.cardPlanes {
+  background-color: #ffffff;
+  overflow: hidden;
+  border-radius: 10px;
+  min-width: 296px;
+}
+
+.nombrePlan {
+  background-color: #00377b;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 95px;
+}
+
+.nombrePlan h2 {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 300;
+  width: 250px;
+}
+
+.nombrePlan h3 {
+  font-size: 30px;
+  font-weight: 300;
+}
+
+.descuento {
+  background-color: #ffb600;
+  color: #ffffff;
+  text-align: center;
+  font-size: 14px;
+  height: 26px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.informacionPlan {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.informacionPlan-mesDePago {
+  background-color: #ccebfd;
+  color: #019df4;
+  text-align: center;
+  width: 264px;
+  font-size: 14px;
+  padding: 4px 8px;
+  border-radius: 8px;
+}
+
+.informacionPlan-precio {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+
+.informacionPlan-precio-precioDescuento {
+  font-size: 32px;
+  color: #313235;
+}
+
+.informacionPlan-precio-c2 {
+  /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px; */
+}
+
+.informacionPlan-precio-c2-mesesPromo {
+  color: #86888c;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.informacionPlan-precio-c2-despues {
+  color: #86888c;
+  font-size: 14px;
+}
+
+.botonTeLlamamos {
+  color: #ffffff;
+  font-weight: bold;
+  background-color: #00c8ff;
+  width: 264px;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 9px;
+}
+
+.comprarWhatsApp{
+    color: #5bc500;
+    font-weight: bold;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    padding: 9px;
+}
+
+
+.detallesPlan-ver{
+    color: #019df4;
+    padding: 12px 8px;
+    text-align: center;
+}

@@ -4,6 +4,8 @@ import "../estilos/home.css";
 import imgFullTigoTrio from "../../public/imagenes/fulltigotrio.png";
 import imgFullTigoDuo from "../../public/imagenes/fulltigoduo.png";
 import EstoyInteresado from "../componentes/EstoyInteresado";
+import CardPlanes from "../componentes/CardPlanes";
+
 
 const Home = () => {
   const images = [imgFullTigoTrio, imgFullTigoDuo];
@@ -34,7 +36,17 @@ const Home = () => {
   const handleClosePopup = () => setIsPopupOpen(false);
 
   return (
-    <div>
+    <div className="home">
+      <div class="promocion-tigo">
+        <h1>TIGO internet hogar</h1>
+        <h2>
+          Adquiere hoy <b>Full Tigo</b>, <b>Internet</b> y <b>TV</b> a los
+          mejores precios
+        </h2>
+        <h3>
+          Instalación <b>GRATIS</b>
+        </h3>
+      </div>
       <div className="carrusel">
         <button
           className="carrusel-boton carrusel-boton-izquierda"
@@ -61,6 +73,13 @@ const Home = () => {
           Estoy interesado
         </p>
         <EstoyInteresado isOpen={isPopupOpen} onClose={handleClosePopup} />
+      </div>
+      <div className="planes">
+        <CardPlanes/>
+        <CardPlanes/>
+        <CardPlanes/>
+        <CardPlanes/>
+        
       </div>
     </div>
   );
