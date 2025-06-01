@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from "react";
 import "../estilos/home.css";
 
-import imgFullTigoTrioMovil from "../../public/imagenes/fulltigotrio.png";
-import imgFullTigoDuoMovil from "../../public/imagenes/fulltigoduo.png";
-import imgFullTigoTrioPc from "../../public/imagenes/fulltigotriopc.png";
-import imgFullTigoDuoPc from "../../public/imagenes/fulltigoduopc.png";
+import imgFullTigoTrioMovil from "/imagenes/fulltigotrio.png";
+import imgFullTigoDuoMovil from "/imagenes/fulltigoduo.png";
+import imgFullTigoTrioPc from "/imagenes/fulltigotriopc.png";
+import imgFullTigoDuoPc from "/imagenes/fulltigoduopc.png";
 
 import EstoyInteresado from "../componentes/EstoyInteresado";
 import CardPlanes from "../componentes/CardPlanes";
@@ -65,27 +65,27 @@ const Home = () => {
       detalles: [
         {
           nombre1: "Móvil",
-          imagen1: "../../public/imagenes/telefono-movil.png",
+          imagen1: "/imagenes/telefono-movil.png",
           caracteristica1: "Recibe GB ilimitadas",
           caracteristica2: "15GB para compartir",
           caracteristica3: "Voz y SMS ilimitados a todo destino nacional",
         },
         {
           nombre1: "Internet",
-          imagen1: "../../public/imagenes/wifi.png",
+          imagen1: "/imagenes/wifi.png",
           caracteristica1: "500 Megas de velocidad",
           caracteristica2: "Internet ilimitado",
         },
         {
           nombre1: "Televisión Digital TIGO Avanzado",
-          imagen1: "../../public/imagenes/television.png",
+          imagen1: "/imagenes/television.png",
           caracteristica1: "124 canales HD",
           caracteristica2: "28 Canales SD",
           caracteristica3: "50 de audio",
         },
         {
           nombre1: "Incluido con descuento del 100% por 12 meses",
-          imagen1: "../../public/imagenes/hbo.png",
+          imagen1: "/imagenes/hbo.png",
         },
         {
           nombre1: "Incluido con descuento del 100% por 12 meses",
@@ -107,20 +107,20 @@ const Home = () => {
       detalles: [
         {
           nombre1: "Móvil",
-          imagen1: "../../public/imagenes/telefono-movil.png",
+          imagen1: "/imagenes/telefono-movil.png",
           caracteristica1: "Recibe GB ilimitadas",
           caracteristica2: "15GB para compartir",
           caracteristica3: "Voz y SMS ilimitados a todo destino nacional",
         },
         {
           nombre1: "Internet",
-          imagen1: "../../public/imagenes/wifi.png",
+          imagen1: "/imagenes/wifi.png",
           caracteristica1: "500 Megas de velocidad",
           caracteristica2: "Internet ilimitado",
         },
         {
           nombre1: "Incluido con descuento del 100% por 12 meses",
-          imagen1: "../../public/imagenes/hbo.png",
+          imagen1: "/imagenes/hbo.png",
         },
         {
           nombre1: "Incluido con descuento del 100% por 12 meses",
@@ -142,13 +142,13 @@ const Home = () => {
       detalles: [
         {
           nombre1: "Internet",
-          imagen1: "../../public/imagenes/wifi.png",
+          imagen1: "/imagenes/wifi.png",
           caracteristica1: "500 Megas de velocidad",
           caracteristica2: "Internet ilimitado",
         },
         {
           nombre1: "Televisión Digital TIGO Avanzado",
-          imagen1: "../../public/imagenes/television.png",
+          imagen1: "/imagenes/television.png",
           caracteristica1: "124 canales HD",
           caracteristica2: "28 Canales SD",
           caracteristica3: "50 de audio",
@@ -168,7 +168,7 @@ const Home = () => {
       detalles: [
         {
           nombre1: "Internet",
-          imagen1: "../../public/imagenes/wifi.png",
+          imagen1: "/imagenes/wifi.png",
           caracteristica1: "500 Megas de velocidad",
           caracteristica2: "Internet ilimitado",
         },

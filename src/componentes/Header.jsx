@@ -1,8 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import logoBlanco from "../../public/imagenes/logo_tigo_letras_blancas.png";
-import logowp from "../../public/imagenes/icon-wp.png";
-import telefonoBlanco from "../../public/imagenes/llamada-telefonica.png";
+import logoBlanco from "/imagenes/logo_tigo_letras_blancas.png";
+import logowp from "/imagenes/icon-wp.png";
+import telefonoBlanco from "/imagenes/llamada-telefonica.png";
 
 const Header = () => {
   return (

@@ -104,8 +104,10 @@ a {
 
 .footer-contenedor {
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: center;
+  align-items: center;
   gap: 20px;
 }
 
