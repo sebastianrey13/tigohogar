@@ -6,6 +6,16 @@
   font-style: normal;
 }
 
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Hace que el contenedor ocupe toda la altura de la ventana */
+}
+
+.app-content {
+  flex: 1; /* El contenido se expande para ocupar el espacio restante */
+}
+
 a {
   text-decoration: none;
 }

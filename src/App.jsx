@@ -4,12 +4,21 @@ import Header from "./componentes/Header";
 import Footer from "./componentes/Footer";
 
 function App() {
-  return (
-    <>
+  // return (
+  //   <>
+  //     <Header />
+  //     <Outlet />
+  //     <Footer />
+  //   </>
+  // );
+   return (
+    <div className="app-container">
       <Header />
-      <Outlet />
+      <main className="app-content">
+        <Outlet />
+      </main>
       <Footer />
-    </>
+    </div>
   );
 }
 
