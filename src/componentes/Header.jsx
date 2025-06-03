@@ -14,17 +14,17 @@ const Header = () => {
         <Link className="logoTigo" to={"/home"}>
           <img className="logoTigo" src={logoBlanco} alt="logo-blanco" />
         </Link>
-        <a href="tel:+573152236666" className="llamarHeader boton">
+        <a href="tel:+573043105329" className="llamarHeader boton">
           <img src={telefonoBlanco} alt="logotelefono" />
           <div>
-            <p className="llamarHeaderNumero">3152236666</p>
+            <p className="llamarHeaderNumero">3043105329</p>
             <p className="llamarHeaderInfo">Línea exclusiva de ventas</p>
           </div>
         </a>
       </div>
       <div className="headerLogo">
         <a
-          href="https://wa.me/573152236666"
+          href="https://wa.me/573043105329"
           target="_blank"
           rel="noopener noreferrer"
         >

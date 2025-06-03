@@ -30,7 +30,7 @@ const CardPlanes = ({ nombre, megas, tipo, pagaEn, precioTotal, precioDescuento,
         </div>
         <p onClick={handleOpenPopup} className="botonTeLlamamos">Te llamamos</p>
         <EstoyInteresado isOpen={isPopupOpen} onClose={handleClosePopup} plan={nombre}/>
-        <a href={`https://wa.me/573152236666?text=${mensaje}`} target="_blank" rel="noopener noreferrer">
+        <a href={`https://wa.me/573043105329?text=${mensaje}`} target="_blank" rel="noopener noreferrer">
           <p className="comprarWhatsApp">Comprar en WhatsApp</p>
         </a>
       </div>
